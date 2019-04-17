@@ -1,0 +1,35 @@
+@import "~src/sass/variables";
+
+@mixin ddActive() {
+  color: #fff;
+  background-color: $zonky-turquoise;
+  border-color: $zonky-turquoise-dark;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: $zonky-turquoise-dark;
+  border-color: $zonky-turquoise;
+
+  &:not(:disabled):not(.disabled):active, &:not(:disabled):not(.disabled).active {
+    @include ddActive();
+  }
+}
+
+.show {
+  & > .btn-secondary.dropdown-toggle {
+    @include ddActive();
+  }
+}
+
+.loading {
+  p {
+    color: $zonky-turquoise;
+  }
+}
+
+#resultBox {
+  color: $zonky-orange;
+  font-size: 20px;
+  font-weight: 900;
+}

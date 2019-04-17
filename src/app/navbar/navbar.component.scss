@@ -1,0 +1,10 @@
+@import "~src/sass/variables";
+
+nav {
+  background-color: $zonky-turquoise;
+  color: $zonky-white;
+
+  .navbar-brand {
+    color: $zonky-white;
+  }
+}
